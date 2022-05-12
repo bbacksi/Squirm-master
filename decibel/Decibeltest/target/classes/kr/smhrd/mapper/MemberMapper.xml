@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.smhrd.mapper.MemberMapper">  <!--패키지이름.인터페이스이름 -->
+
+  
+  <insert id="memberInsert" parameterType="kr.smhrd.domain.MemberVO">
+    insert into MemberVO(member_email, member_pw)
+    values(#{member_email}, #{member_pw})  
+  </insert>
+
+  
+</mapper>

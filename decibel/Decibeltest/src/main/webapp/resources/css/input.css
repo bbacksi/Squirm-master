@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/* search */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
+	padding-top: 20px;
+}
+
+.searchTerm {
+	width: 100%;
+	border: 3px solid #4b49ac;
+	border-right: none;
+	padding: 5px;
+	height: 20px;
+	border-radius: 8px 0 0 8px;
+	outline: none;
+	color: black;
+	text-align: center;
+	font-family: 'Gowun Dodum', sans-serif;
+
+}
+
+.searchTerm:focus {
+	color: black;
+}
+
+.searchButton {
+	width: 48px;
+	height: 36px;
+	border: 1px solid #5c5baf;
+	background: #4b49ac;
+	text-align: center;
+	color: #fff;
+	border-radius: 0 8px 8px 0;
+	cursor: pointer;
+	font-size: 20px;
+
+}
+
+/*Resize the wrap to see the search bar change!*/
+.search_wrap {
+	width: 80%;
+	position: absolute;
+	top: 22%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#word_button {
+	width: 56px;
+	font-size: 15px;
+	font-weight: 450;
+	font-family: 'Gowun Dodum', sans-serif;
+}
+.searchButton>i{
+	margin-left: 5px;
+}

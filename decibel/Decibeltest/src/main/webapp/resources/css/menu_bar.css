@@ -1,0 +1,121 @@
+.menu li {
+  list-style: none;
+}
+
+.menu li a {
+  padding: 5px
+}
+
+/* TOGGLE BUTTON */
+.toggle-button {
+  position: absolute;
+  width: 20px;
+  height: 40px;
+  padding: 4px;
+  transition: .25s;
+  z-index: 100;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.toggle-button .menu-bar {
+  position: absolute;
+  border-radius: 2px;
+  width: 80%;
+  transition: .5s;
+}
+
+.toggle-button .bar-top {
+  border: 4px solid #7959db;
+  border-bottom: none;
+  top: 0;
+}
+
+.toggle-button .bar-middle {
+  border: 4px solid #7959db;
+  border-bottom: none;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px;
+}
+
+.toggle-button .bar-bottom {
+  border: 4px solid #7959db;
+  border-top: none;
+  top: 22px;
+}
+
+.open .bar-top {
+  transform: rotate(45deg) translate(8px, 8px);
+  transition: .5s;
+  border-color: white;
+}
+
+.open .bar-middle {
+  transition: .3s ease-in;
+  opacity: 0;
+}
+
+.open .bar-bottom {
+  transform: rotate(-45deg) translate(8px, -7px);
+  transition: .5s;
+  border-color: white;
+}
+
+.open .toggle-button {
+  transform: translateX(270px);
+}
+/* END TOGGLE BUTTON */
+
+/* MENU */
+.menu-wrap {
+    background-color: #4b49ac;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 180px;
+    margin-left: -180px;
+    font-size: 1em;
+    font-weight: 700;
+    overflow: auto;
+    transition: .25s;
+    z-index: 10;
+}
+
+.menu-open {
+    margin-left: 0;
+    box-shadow: 4px 1px 25px 1px #B9ADAD;
+}
+
+.menu {
+    position: relative;
+    top: 50px;
+    margin: 0;
+    padding: 10px;
+    font-family: verdana ,sans-serif;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  display: block;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+}
+
+.menu li a:active {
+  background: #287CE7;
+}
+
+i {
+  position: relative;
+  top: 4px;
+  padding-right: 15px;
+}
+
+.menu_nick{
+  font-size:22px;
+}
+/* END MENU */
